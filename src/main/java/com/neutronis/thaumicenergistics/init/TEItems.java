@@ -2,6 +2,7 @@ package com.neutronis.thaumicenergistics.init;
 
 import com.neutronis.thaumicenergistics.ThaumicEnergistics;
 import com.neutronis.thaumicenergistics.item.EssentiaStorageCell;
+import com.neutronis.thaumicenergistics.item.LegacyNamedItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -12,11 +13,18 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-/** First visible/content slice of the 1.21.1 port: native essentia storage cells. */
+/** Visible/content registration for the modern Thaumic Energistics port. */
 public final class TEItems {
     private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ThaumicEnergistics.MOD_ID);
     private static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(
             Registries.CREATIVE_MODE_TAB, ThaumicEnergistics.MOD_ID);
+
+    public static final DeferredItem<LegacyNamedItem> DIFFUSION_CORE = ITEMS.register(
+            "diffusion_core",
+            () -> new LegacyNamedItem(new Item.Properties(), "diffusion_core"));
+    public static final DeferredItem<LegacyNamedItem> COALESCENCE_CORE = ITEMS.register(
+            "coalescence_core",
+            () -> new LegacyNamedItem(new Item.Properties(), "coalescence_core"));
 
     public static final DeferredItem<Item> ESSENTIA_COMPONENT_1K = ITEMS.registerSimpleItem("essentia_component_1k");
     public static final DeferredItem<Item> ESSENTIA_COMPONENT_4K = ITEMS.registerSimpleItem("essentia_component_4k");
