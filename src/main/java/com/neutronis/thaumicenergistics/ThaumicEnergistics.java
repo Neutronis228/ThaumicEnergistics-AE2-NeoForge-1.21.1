@@ -43,8 +43,8 @@ public final class ThaumicEnergistics {
                 GenericSlotCapacities.getMap().get(AEKeyType.fluids()));
 
         // Make the custom key space usable by the normal AE2 automation parts.
-        // This lets standard Import/Export/Storage Buses interact with Thaumcraft jars,
-        // alembics and other sided TCEssentiaTransport endpoints.
+        // This lets both standard AE2 buses and the classic TE-labelled bus parts
+        // interact with Thaumcraft jars, alembics and other essentia endpoints.
         StackWorldBehaviors.registerImportStrategy(EssentiaKeyType.INSTANCE, EssentiaStackImportStrategy::new);
         StackWorldBehaviors.registerExportStrategy(EssentiaKeyType.INSTANCE, EssentiaStackExportStrategy::new);
         StackWorldBehaviors.registerExternalStorageStrategy(
@@ -63,7 +63,10 @@ public final class ThaumicEnergistics {
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_4K, id("block/drive/cells/essentia_cell_4k"));
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_16K, id("block/drive/cells/essentia_cell_16k"));
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_64K, id("block/drive/cells/essentia_cell_64k"));
-        LOGGER.info("Thaumic Energistics essentia storage + AE2 bus bridge initialized");
+        // Higher tiers intentionally reuse the 64K drive-face artwork for now.
+        StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_256K, id("block/drive/cells/essentia_cell_64k"));
+        StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_1024K, id("block/drive/cells/essentia_cell_64k"));
+        LOGGER.info("Thaumic Energistics essentia storage + legacy bus bridge initialized");
     }
 
     public static ResourceLocation id(String path) {
