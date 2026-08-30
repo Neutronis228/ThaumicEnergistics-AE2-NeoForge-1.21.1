@@ -1,1 +1,1 @@
-{"parent":"thaumicenergistics:item/essentia_component_64k"}
+{"parent":"minecraft:item/generated","textures":{"layer0":"thaumicenergistics:item/essentia_component_256k"}}
