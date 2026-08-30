@@ -1,0 +1,12 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "research": "ESSENTIASTORAGE1K@2",
+  "vis": 10,
+  "pattern": ["SQS", "QPQ", "SQS"],
+  "key": {
+    "S": {"item": "thaumcraft:salis_mundus"},
+    "Q": {"item": "ae2:certus_quartz_crystal"},
+    "P": {"item": "ae2:logic_processor"}
+  },
+  "result": {"id": "thaumicenergistics:essentia_component_1k", "count": 1}
+}

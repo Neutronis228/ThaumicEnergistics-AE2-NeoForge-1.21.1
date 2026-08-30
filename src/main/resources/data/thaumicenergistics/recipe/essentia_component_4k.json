@@ -1,0 +1,13 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "research": "ESSENTIASTORAGE4K@2",
+  "vis": 10,
+  "pattern": ["SPS", "CGC", "SCS"],
+  "key": {
+    "S": {"item": "thaumcraft:salis_mundus"},
+    "C": {"item": "thaumicenergistics:essentia_component_1k"},
+    "P": {"item": "ae2:calculation_processor"},
+    "G": {"item": "ae2:quartz_glass"}
+  },
+  "result": {"id": "thaumicenergistics:essentia_component_4k", "count": 1}
+}

@@ -1,0 +1,139 @@
+{
+  "entries": [
+    {
+      "key": "BASEENERGISTICS",
+      "name": "research.base_energistics.title",
+      "icons": ["thaumicenergistics:essentia_cell_1k"],
+      "category": "THAUMICENERGISTICS",
+      "location": [0, 0],
+      "meta": ["ROUND"],
+      "parents": ["UNLOCKARTIFICE"],
+      "stages": [
+        {"text": "research.base_energistics.stage.1"}
+      ]
+    },
+    {
+      "key": "DIGISENTIA",
+      "name": "research.digisentia.title",
+      "icons": ["thaumicenergistics:coalescence_core", "thaumicenergistics:diffusion_core"],
+      "category": "THAUMICENERGISTICS",
+      "location": [0, -2],
+      "meta": ["ROUND"],
+      "parents": ["BASEENERGISTICS"],
+      "stages": [
+        {
+          "text": "research.digisentia.stage.1",
+          "required_item": ["ae2:formation_core", "ae2:annihilation_core", "thaumcraft:quicksilver"]
+        },
+        {
+          "text": "research.digisentia.stage.2",
+          "recipes": ["thaumicenergistics:coalescence_core", "thaumicenergistics:diffusion_core"]
+        }
+      ]
+    },
+    {
+      "key": "ESSENTIASTORAGE1K",
+      "name": "research.essentiastorage1k.title",
+      "icons": ["thaumicenergistics:essentia_component_1k", "thaumicenergistics:essentia_cell_1k"],
+      "category": "THAUMICENERGISTICS",
+      "location": [-2, 0],
+      "meta": ["ROUND"],
+      "parents": ["BASEENERGISTICS"],
+      "stages": [
+        {"text": "research.essentiastorage1k.stage.1", "required_item": ["thaumcraft:salis_mundus;4", "ae2:certus_quartz_crystal;4", "ae2:logic_processor"]},
+        {"text": "research.essentiastorage1k.stage.2", "recipes": ["thaumicenergistics:essentia_component_1k", "thaumicenergistics:essentia_cell_1k"]}
+      ]
+    },
+    {
+      "key": "ESSENTIASTORAGE4K",
+      "name": "research.essentiastorage4k.title",
+      "icons": ["thaumicenergistics:essentia_component_4k", "thaumicenergistics:essentia_cell_4k"],
+      "category": "THAUMICENERGISTICS",
+      "location": [-4, 0],
+      "meta": ["ROUND"],
+      "parents": ["ESSENTIASTORAGE1K"],
+      "stages": [
+        {"text": "research.essentiastorage4k.stage.1", "required_item": ["thaumcraft:salis_mundus;4", "thaumicenergistics:essentia_component_1k;3", "ae2:quartz_glass", "ae2:calculation_processor"]},
+        {"text": "research.essentiastorage4k.stage.2", "recipes": ["thaumicenergistics:essentia_component_4k", "thaumicenergistics:essentia_cell_4k"]}
+      ]
+    },
+    {
+      "key": "ESSENTIASTORAGE16K",
+      "name": "research.essentiastorage16k.title",
+      "icons": ["thaumicenergistics:essentia_component_16k", "thaumicenergistics:essentia_cell_16k"],
+      "category": "THAUMICENERGISTICS",
+      "location": [-6, 0],
+      "meta": ["ROUND"],
+      "parents": ["ESSENTIASTORAGE4K"],
+      "stages": [
+        {"text": "research.essentiastorage16k.stage.1", "required_item": ["thaumcraft:salis_mundus;4", "thaumicenergistics:essentia_component_4k;3", "ae2:quartz_glass", "ae2:engineering_processor"]},
+        {"text": "research.essentiastorage16k.stage.2", "recipes": ["thaumicenergistics:essentia_component_16k", "thaumicenergistics:essentia_cell_16k"]}
+      ]
+    },
+    {
+      "key": "ESSENTIASTORAGE64K",
+      "name": "research.essentiastorage64k.title",
+      "icons": ["thaumicenergistics:essentia_component_64k", "thaumicenergistics:essentia_cell_64k"],
+      "category": "THAUMICENERGISTICS",
+      "location": [-8, 0],
+      "meta": ["ROUND"],
+      "parents": ["ESSENTIASTORAGE16K"],
+      "stages": [
+        {"text": "research.essentiastorage64k.stage.1", "required_item": ["thaumcraft:salis_mundus;4", "thaumicenergistics:essentia_component_16k;3", "ae2:quartz_glass", "ae2:engineering_processor"]},
+        {"text": "research.essentiastorage64k.stage.2", "recipes": ["thaumicenergistics:essentia_component_64k", "thaumicenergistics:essentia_cell_64k"]}
+      ]
+    },
+    {
+      "key": "ESSENTIASTORAGE256K",
+      "name": "research.essentiastorage256k.title",
+      "icons": ["thaumicenergistics:essentia_component_256k", "thaumicenergistics:essentia_cell_256k"],
+      "category": "THAUMICENERGISTICS",
+      "location": [-10, 0],
+      "meta": ["ROUND"],
+      "parents": ["ESSENTIASTORAGE64K"],
+      "stages": [
+        {"text": "research.essentiastorage256k.stage.1"},
+        {"text": "research.essentiastorage256k.stage.2", "recipes": ["thaumicenergistics:essentia_component_256k", "thaumicenergistics:essentia_cell_256k"]}
+      ]
+    },
+    {
+      "key": "ESSENTIASTORAGE1024K",
+      "name": "research.essentiastorage1024k.title",
+      "icons": ["thaumicenergistics:essentia_component_1024k", "thaumicenergistics:essentia_cell_1024k"],
+      "category": "THAUMICENERGISTICS",
+      "location": [-12, 0],
+      "meta": ["ROUND"],
+      "parents": ["ESSENTIASTORAGE256K"],
+      "stages": [
+        {"text": "research.essentiastorage1024k.stage.1"},
+        {"text": "research.essentiastorage1024k.stage.2", "recipes": ["thaumicenergistics:essentia_component_1024k", "thaumicenergistics:essentia_cell_1024k"]}
+      ]
+    },
+    {
+      "key": "ESSENTIABUSES",
+      "name": "research.essentiabuses.title",
+      "icons": ["thaumicenergistics:essentia_import", "thaumicenergistics:essentia_export", "thaumicenergistics:essentia_storage"],
+      "category": "THAUMICENERGISTICS",
+      "location": [4, -2],
+      "meta": ["ROUND"],
+      "parents": ["DIGISENTIA"],
+      "stages": [
+        {"text": "research.essentiabuses.stage.1"},
+        {"text": "research.essentiabuses.stage.2", "recipes": ["thaumicenergistics:essentia_import_bus", "thaumicenergistics:essentia_export_bus", "thaumicenergistics:essentia_storage_bus"]}
+      ]
+    },
+    {
+      "key": "ESSENTIALEVELEMITTER",
+      "name": "research.essentialevelemitter.title",
+      "icons": ["thaumicenergistics:essentia_level_emitter"],
+      "category": "THAUMICENERGISTICS",
+      "location": [6, -2],
+      "meta": ["ROUND"],
+      "parents": ["ESSENTIABUSES"],
+      "stages": [
+        {"text": "research.essentialevelemitter.stage.1"},
+        {"text": "research.essentialevelemitter.stage.2", "recipes": ["thaumicenergistics:essentia_level_emitter"]}
+      ]
+    }
+  ]
+}

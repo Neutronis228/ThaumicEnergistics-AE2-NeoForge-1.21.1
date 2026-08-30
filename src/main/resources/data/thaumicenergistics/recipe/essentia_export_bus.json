@@ -1,0 +1,13 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "research": "ESSENTIABUSES@2",
+  "vis": 20,
+  "pattern": ["ICI", "STS"],
+  "key": {
+    "I": {"tag": "c:ingots/iron"},
+    "C": {"item": "thaumicenergistics:coalescence_core"},
+    "S": {"item": "thaumcraft:salis_mundus"},
+    "T": {"item": "thaumcraft:tube"}
+  },
+  "result": {"id": "thaumicenergistics:essentia_export", "count": 1}
+}
