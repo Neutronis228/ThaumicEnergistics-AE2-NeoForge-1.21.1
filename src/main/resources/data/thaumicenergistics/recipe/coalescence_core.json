@@ -1,0 +1,13 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "research": "DIGISENTIA@2",
+  "vis": 10,
+  "pattern": ["SSS", "QFL", "SSS"],
+  "key": {
+    "S": {"item": "thaumcraft:quicksilver"},
+    "Q": {"item": "ae2:certus_quartz_crystal"},
+    "F": {"item": "ae2:fluix_dust"},
+    "L": {"item": "ae2:logic_processor"}
+  },
+  "result": {"id": "thaumicenergistics:coalescence_core", "count": 2}
+}
