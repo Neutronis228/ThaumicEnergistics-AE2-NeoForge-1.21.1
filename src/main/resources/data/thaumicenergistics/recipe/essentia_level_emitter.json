@@ -1,0 +1,11 @@
+{
+  "type": "thaumcraft:arcane_shapeless",
+  "research": "ESSENTIALEVELEMITTER@2",
+  "vis": 15,
+  "ingredients": [
+    {"item": "ae2:level_emitter"},
+    {"item": "thaumicenergistics:diffusion_core"},
+    {"item": "thaumcraft:salis_mundus"}
+  ],
+  "result": {"id": "thaumicenergistics:essentia_level_emitter", "count": 1}
+}
