@@ -2,6 +2,7 @@
   "itemGroup.ThaumicEnergistics": "Thaumic Energistics",
   "keytype.thaumicenergistics.essentia": "Essentia",
   "gui.thaumicenergistics.storage.essentia": "Essentia Storage",
+  "tc.research_category.THAUMICENERGISTICS": "Energistics",
   "item.thaumicenergistics.diffusion_core.name": "Diffusion Core",
   "item.thaumicenergistics.coalescence_core.name": "Coalescence Core",
   "item.thaumicenergistics.essentia_component_1k": "1K Essentia Component",
