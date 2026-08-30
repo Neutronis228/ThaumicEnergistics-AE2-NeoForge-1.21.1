@@ -1,0 +1,13 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "research": "ESSENTIABUSES@2",
+  "vis": 20,
+  "pattern": ["SCS", "ITI"],
+  "key": {
+    "S": {"item": "thaumcraft:salis_mundus"},
+    "C": {"item": "thaumicenergistics:diffusion_core"},
+    "I": {"tag": "c:ingots/iron"},
+    "T": {"item": "thaumcraft:tube"}
+  },
+  "result": {"id": "thaumicenergistics:essentia_import", "count": 1}
+}
