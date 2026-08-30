@@ -4,8 +4,12 @@ import appeng.api.behaviors.GenericSlotCapacities;
 import appeng.api.client.StorageCellModels;
 import appeng.api.stacks.AEKeyType;
 import appeng.api.stacks.AEKeyTypes;
+import appeng.parts.automation.StackWorldBehaviors;
 import com.neutronis.thaumicenergistics.init.TEItems;
 import com.neutronis.thaumicenergistics.integration.ae2.EssentiaKeyType;
+import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaExternalStorageStrategy;
+import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaStackExportStrategy;
+import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaStackImportStrategy;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
@@ -35,6 +39,15 @@ public final class ThaumicEnergistics {
                 EssentiaKeyType.INSTANCE,
                 GenericSlotCapacities.getMap().get(AEKeyType.fluids()));
 
+        // Make the custom key space usable by the normal AE2 automation parts.
+        // This lets standard Import/Export/Storage Buses interact with Thaumcraft jars,
+        // alembics and other sided TCEssentiaTransport endpoints.
+        StackWorldBehaviors.registerImportStrategy(EssentiaKeyType.INSTANCE, EssentiaStackImportStrategy::new);
+        StackWorldBehaviors.registerExportStrategy(EssentiaKeyType.INSTANCE, EssentiaStackExportStrategy::new);
+        StackWorldBehaviors.registerExternalStorageStrategy(
+                EssentiaKeyType.INSTANCE,
+                EssentiaExternalStorageStrategy::new);
+
         bus.addListener((FMLCommonSetupEvent event) -> event.enqueueWork(this::commonSetup));
     }
 
@@ -43,7 +56,7 @@ public final class ThaumicEnergistics {
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_4K, id("block/drive/cells/essentia_cell_4k"));
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_16K, id("block/drive/cells/essentia_cell_16k"));
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_64K, id("block/drive/cells/essentia_cell_64k"));
-        LOGGER.info("Thaumic Energistics alpha1 storage foundation initialized");
+        LOGGER.info("Thaumic Energistics essentia storage + AE2 bus bridge initialized");
     }
 
     public static ResourceLocation id(String path) {
