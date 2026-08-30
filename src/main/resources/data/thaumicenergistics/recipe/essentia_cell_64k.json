@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {"item": "ae2:item_cell_housing"},
+    {"item": "thaumicenergistics:essentia_component_64k"}
+  ],
+  "result": {"id": "thaumicenergistics:essentia_cell_64k", "count": 1}
+}
