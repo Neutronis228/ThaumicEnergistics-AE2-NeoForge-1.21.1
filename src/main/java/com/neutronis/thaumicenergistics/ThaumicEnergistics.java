@@ -5,6 +5,7 @@ import appeng.api.client.StorageCellModels;
 import appeng.api.stacks.AEKeyType;
 import appeng.api.stacks.AEKeyTypes;
 import appeng.parts.automation.StackWorldBehaviors;
+import com.neutronis.thaumicenergistics.client.EssentiaKeyRenderer;
 import com.neutronis.thaumicenergistics.init.TEItems;
 import com.neutronis.thaumicenergistics.integration.ae2.EssentiaKeyType;
 import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaExternalStorageStrategy;
@@ -12,9 +13,11 @@ import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaStackE
 import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaStackImportStrategy;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -49,6 +52,10 @@ public final class ThaumicEnergistics {
                 EssentiaExternalStorageStrategy::new);
 
         bus.addListener((FMLCommonSetupEvent event) -> event.enqueueWork(this::commonSetup));
+
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            EssentiaKeyRenderer.initialize(bus);
+        }
     }
 
     private void commonSetup() {
