@@ -1,0 +1,63 @@
+name: Build NeoForge Port
+
+on:
+  push:
+    branches: [ "port/**", "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Thaumic Energistics
+        uses: actions/checkout@v4
+
+      - name: Checkout Thaumic Research dependency
+        uses: actions/checkout@v4
+        with:
+          repository: Neutronis228/unofficial-thaumcraft6-neoforge-1.21.1-port
+          ref: neutron-21.1.248-alpha3
+          path: _deps/thaumcraft
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Set up Gradle 9.2.1
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.2.1'
+
+      - name: Patch Thaumic Research CI Java path
+        shell: bash
+        run: sed -i '/^org.gradle.java.installations.paths=/d' _deps/thaumcraft/05_neoforge_port/gradle.properties
+
+      - name: Build Thaumic Research dependency
+        working-directory: _deps/thaumcraft/05_neoforge_port
+        run: |
+          chmod +x gradlew
+          ./gradlew build --no-daemon --stacktrace
+
+      - name: Stage Thaumic Research dev JAR
+        shell: bash
+        run: |
+          mkdir -p libs
+          CORE_JAR=$(find _deps/thaumcraft/05_neoforge_port/build/libs -maxdepth 1 -name 'thaumcraft-*.jar' ! -name '*sources*' | head -n1)
+          test -n "$CORE_JAR"
+          cp "$CORE_JAR" libs/thaumcraft-dev.jar
+          echo "Using core: $CORE_JAR"
+
+      - name: Build Thaumic Energistics
+        run: gradle build --no-daemon --stacktrace
+
+      - name: Upload build outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: thaumic-energistics-neoforge-build
+          path: |
+            build/libs/*.jar
+            docs/PORTING_STATUS.md
+          if-no-files-found: error
