@@ -1,0 +1,13 @@
+{
+  "itemGroup.ThaumicEnergistics": "Thaumic Energistics",
+  "keytype.thaumicenergistics.essentia": "Essentia",
+  "gui.thaumicenergistics.storage.essentia": "Essentia Storage",
+  "item.thaumicenergistics.essentia_component_1k": "1K Essentia Component",
+  "item.thaumicenergistics.essentia_component_4k": "4K Essentia Component",
+  "item.thaumicenergistics.essentia_component_16k": "16K Essentia Component",
+  "item.thaumicenergistics.essentia_component_64k": "64K Essentia Component",
+  "item.thaumicenergistics.essentia_cell_1k": "1K Essentia Storage Cell",
+  "item.thaumicenergistics.essentia_cell_4k": "4K Essentia Storage Cell",
+  "item.thaumicenergistics.essentia_cell_16k": "16K Essentia Storage Cell",
+  "item.thaumicenergistics.essentia_cell_64k": "64K Essentia Storage Cell"
+}
