@@ -1,0 +1,12 @@
+{
+  "type": "thaumcraft:arcane_shapeless",
+  "research": "ESSENTIABUSES@2",
+  "vis": 20,
+  "ingredients": [
+    {"item": "ae2:interface"},
+    {"item": "minecraft:piston"},
+    {"item": "minecraft:sticky_piston"},
+    {"item": "thaumcraft:salis_mundus"}
+  ],
+  "result": {"id": "thaumicenergistics:essentia_storage", "count": 1}
+}
