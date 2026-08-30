@@ -52,10 +52,10 @@ public final class TEItems {
             () -> new EssentiaStorageCell(new Item.Properties().stacksTo(1), 2.0, 64, 512));
     public static final DeferredItem<EssentiaStorageCell> ESSENTIA_CELL_256K = ITEMS.register(
             "essentia_cell_256k",
-            () -> new EssentiaStorageCell(new Item.Properties().stacksTo(1), 2.5, 256, 2048));
+            () -> new EssentiaStorageCell(new Item.Properties().stacksTo(1), 2.5, 256, 2048, 24));
     public static final DeferredItem<EssentiaStorageCell> ESSENTIA_CELL_1024K = ITEMS.register(
             "essentia_cell_1024k",
-            () -> new EssentiaStorageCell(new Item.Properties().stacksTo(1), 3.0, 1024, 8192));
+            () -> new EssentiaStorageCell(new Item.Properties().stacksTo(1), 3.0, 1024, 8192, 36));
 
     /*
      * Keep the classic Thaumic Energistics bus items and Thaumonomicon progression.
