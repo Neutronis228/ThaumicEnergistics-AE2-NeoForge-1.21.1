@@ -1,13 +1,13 @@
 package com.neutronis.thaumicenergistics.init;
 
 import appeng.items.parts.PartItem;
-import appeng.parts.automation.ExportBusPart;
-import appeng.parts.automation.ImportBusPart;
 import appeng.parts.automation.StorageLevelEmitterPart;
 import appeng.parts.storagebus.StorageBusPart;
 import com.neutronis.thaumicenergistics.ThaumicEnergistics;
 import com.neutronis.thaumicenergistics.integration.ae2.terminal.ArcaneTerminalPart;
 import com.neutronis.thaumicenergistics.integration.ae2.terminal.EssentiaTerminalPart;
+import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaExportBusPart;
+import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaImportBusPart;
 import com.neutronis.thaumicenergistics.item.EssentiaStorageCell;
 import com.neutronis.thaumicenergistics.item.LegacyNamedItem;
 import net.minecraft.core.registries.Registries;
@@ -65,12 +65,12 @@ public final class TEItems {
      * Because EssentiaKeyType registers native import/export/external-storage strategies,
      * these legacy-looking parts are fully functional with essentia instead of being dummies.
      */
-    public static final DeferredItem<PartItem<ImportBusPart>> ESSENTIA_IMPORT = ITEMS.register(
+    public static final DeferredItem<PartItem<EssentiaImportBusPart>> ESSENTIA_IMPORT = ITEMS.register(
             "essentia_import",
-            () -> new PartItem<>(new Item.Properties(), ImportBusPart.class, ImportBusPart::new));
-    public static final DeferredItem<PartItem<ExportBusPart>> ESSENTIA_EXPORT = ITEMS.register(
+            () -> new PartItem<>(new Item.Properties(), EssentiaImportBusPart.class, EssentiaImportBusPart::new));
+    public static final DeferredItem<PartItem<EssentiaExportBusPart>> ESSENTIA_EXPORT = ITEMS.register(
             "essentia_export",
-            () -> new PartItem<>(new Item.Properties(), ExportBusPart.class, ExportBusPart::new));
+            () -> new PartItem<>(new Item.Properties(), EssentiaExportBusPart.class, EssentiaExportBusPart::new));
     public static final DeferredItem<PartItem<StorageBusPart>> ESSENTIA_STORAGE = ITEMS.register(
             "essentia_storage",
             () -> new PartItem<>(new Item.Properties(), StorageBusPart.class, StorageBusPart::new));

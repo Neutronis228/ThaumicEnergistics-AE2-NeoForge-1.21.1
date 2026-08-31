@@ -1,6 +1,7 @@
 package com.neutronis.thaumicenergistics;
 
 import appeng.api.behaviors.GenericSlotCapacities;
+import appeng.api.behaviors.ContainerItemStrategy;
 import appeng.api.client.StorageCellModels;
 import appeng.api.parts.PartModels;
 import appeng.api.stacks.AEKeyType;
@@ -9,6 +10,8 @@ import appeng.parts.automation.StackWorldBehaviors;
 import com.neutronis.thaumicenergistics.client.EssentiaKeyRenderer;
 import com.neutronis.thaumicenergistics.init.TEItems;
 import com.neutronis.thaumicenergistics.integration.ae2.EssentiaKeyType;
+import com.neutronis.thaumicenergistics.integration.ae2.EssentiaKey;
+import com.neutronis.thaumicenergistics.integration.ae2.container.EssentiaContainerItemStrategy;
 import com.neutronis.thaumicenergistics.integration.ae2.terminal.ArcaneTerminalPart;
 import com.neutronis.thaumicenergistics.integration.ae2.terminal.EssentiaTerminalPart;
 import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaExternalStorageStrategy;
@@ -62,6 +65,11 @@ public final class ThaumicEnergistics {
     }
 
     private void commonSetup() {
+        ContainerItemStrategy.register(
+                EssentiaKeyType.INSTANCE,
+                EssentiaKey.class,
+                new EssentiaContainerItemStrategy()
+        );
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_1K, id("block/drive/cells/essentia_cell_1k"));
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_4K, id("block/drive/cells/essentia_cell_4k"));
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_16K, id("block/drive/cells/essentia_cell_16k"));

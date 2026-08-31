@@ -59,5 +59,6 @@
   "research.essentiaterminal.stage.2": "The ME Essentia Terminal uses AE2's synchronized terminal protocol to display and manipulate the essentia key space.",
   "research.arcaneterminal.title": "Arcane Crafting Terminal",
   "research.arcaneterminal.stage.1": "A normal ME crafting terminal can be reinforced with an Arcane Workbench and a vis resonator, creating a stable foundation for network-assisted thaumic crafting.",
-  "research.arcaneterminal.stage.2": "The terminal already provides the complete ME crafting grid. Its dedicated arcane-recipe and aura-vis bridge remains the next refinement."
+  "research.arcaneterminal.stage.2": "The terminal already provides the complete ME crafting grid. Its dedicated arcane-recipe and aura-vis bridge remains the next refinement.",
+  "message.thaumicenergistics.bus_filter": "Bus filter: %s"
 }

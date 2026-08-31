@@ -129,6 +129,7 @@
   "item.thaumicenergistics.essentia_cell_64k": "Комірка сховища ME-есенції 64K",
   "item.thaumicenergistics.essentia_cell_256k": "Комірка сховища ME-есенції 256K",
   "item.thaumicenergistics.essentia_cell_1024k": "Комірка сховища ME-есенції 1024K",
+  "message.thaumicenergistics.bus_filter": "Фільтр шини: %s",
   "item.thaumicenergistics.essentia_import": "ME-шина імпорту есенції",
   "item.thaumicenergistics.essentia_export": "ME-шина експорту есенції",
   "item.thaumicenergistics.essentia_storage": "ME-шина сховища есенції",
