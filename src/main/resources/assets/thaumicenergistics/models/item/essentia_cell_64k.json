@@ -1,1 +1,1 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"minecraft:item/amethyst_shard"}}
+{"parent":"minecraft:item/generated","textures":{"layer0":"thaumicenergistics:item/cell/64k"}}

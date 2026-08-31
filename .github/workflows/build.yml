@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Neutronis228/unofficial-thaumcraft6-neoforge-1.21.1-port
-          ref: neutron-21.1.248-alpha1
+          ref: neutron-21.1.248-alpha4-parity
           path: _deps/thaumcraft
 
       - name: Set up Java 21

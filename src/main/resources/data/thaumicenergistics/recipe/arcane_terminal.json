@@ -1,0 +1,12 @@
+{
+  "type": "thaumcraft:arcane_shapeless",
+  "research": "ARCANETERMINAL@2",
+  "vis": 50,
+  "ingredients": [
+    {"item": "ae2:crafting_terminal"},
+    {"item": "thaumcraft:arcane_workbench"},
+    {"item": "thaumcraft:vis_resonator"},
+    {"item": "thaumcraft:salis_mundus"}
+  ],
+  "result": {"id": "thaumicenergistics:arcane_terminal", "count": 1}
+}

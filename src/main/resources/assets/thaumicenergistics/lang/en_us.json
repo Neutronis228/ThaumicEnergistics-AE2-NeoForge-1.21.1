@@ -51,5 +51,13 @@
   "research.essentiabuses.stage.2": "The classic ME Essentia Import, Export and Storage Buses are now available. Modern AE2 buses can also understand essentia, but these dedicated devices preserve the intended Thaumic Energistics progression and recipes.",
   "research.essentialevelemitter.title": "Essentia Level Emitter",
   "research.essentialevelemitter.stage.1": "Moving essentia is useful, but automation remains blind unless the network can react to the amount of a specific aspect. I can adapt an ME Level Emitter to monitor digisentia rather than items.",
-  "research.essentialevelemitter.stage.2": "The Essentia Level Emitter monitors one selected aspect and emits redstone when its stored amount crosses the configured threshold."
+  "research.essentialevelemitter.stage.2": "The Essentia Level Emitter monitors one selected aspect and emits redstone when its stored amount crosses the configured threshold.",
+  "item.thaumicenergistics.essentia_terminal": "ME Essentia Terminal",
+  "item.thaumicenergistics.arcane_terminal": "Arcane Crafting Terminal",
+  "research.essentiaterminal.title": "Essentia Monitoring",
+  "research.essentiaterminal.stage.1": "Digitizing essentia solved storage, but it also made the network's reserves difficult to inspect. A key-aware ME terminal should expose that information safely.",
+  "research.essentiaterminal.stage.2": "The ME Essentia Terminal uses AE2's synchronized terminal protocol to display and manipulate the essentia key space.",
+  "research.arcaneterminal.title": "Arcane Crafting Terminal",
+  "research.arcaneterminal.stage.1": "A normal ME crafting terminal can be reinforced with an Arcane Workbench and a vis resonator, creating a stable foundation for network-assisted thaumic crafting.",
+  "research.arcaneterminal.stage.2": "The terminal already provides the complete ME crafting grid. Its dedicated arcane-recipe and aura-vis bridge remains the next refinement."
 }

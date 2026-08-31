@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {"id": "thaumicenergistics:coalescence_core", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "DIGISENTIA@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:diffusion_core", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "DIGISENTIA@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_component_1k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE1K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_cell_1k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE1K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_component_4k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE4K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_cell_4k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE4K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_component_16k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE16K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_cell_16k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE16K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_component_64k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE64K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_cell_64k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE64K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_component_256k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE256K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_cell_256k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE256K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_component_1024k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE1024K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_cell_1024k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE1024K@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_terminal", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIATERMINAL@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:arcane_terminal", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ARCANETERMINAL@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_import_bus", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIABUSES@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_export_bus", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIABUSES@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_storage_bus", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIABUSES@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:essentia_level_emitter", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIALEVELEMITTER@2", "direct_reference": true, "occurrence_count": 1}
+  ]
+}

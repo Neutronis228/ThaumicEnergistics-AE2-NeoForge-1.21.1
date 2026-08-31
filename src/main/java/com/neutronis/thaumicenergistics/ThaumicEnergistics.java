@@ -2,12 +2,15 @@ package com.neutronis.thaumicenergistics;
 
 import appeng.api.behaviors.GenericSlotCapacities;
 import appeng.api.client.StorageCellModels;
+import appeng.api.parts.PartModels;
 import appeng.api.stacks.AEKeyType;
 import appeng.api.stacks.AEKeyTypes;
 import appeng.parts.automation.StackWorldBehaviors;
 import com.neutronis.thaumicenergistics.client.EssentiaKeyRenderer;
 import com.neutronis.thaumicenergistics.init.TEItems;
 import com.neutronis.thaumicenergistics.integration.ae2.EssentiaKeyType;
+import com.neutronis.thaumicenergistics.integration.ae2.terminal.ArcaneTerminalPart;
+import com.neutronis.thaumicenergistics.integration.ae2.terminal.EssentiaTerminalPart;
 import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaExternalStorageStrategy;
 import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaStackExportStrategy;
 import com.neutronis.thaumicenergistics.integration.ae2.transport.EssentiaStackImportStrategy;
@@ -66,7 +69,12 @@ public final class ThaumicEnergistics {
         // Higher tiers intentionally reuse the 64K drive-face artwork for now.
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_256K, id("block/drive/cells/essentia_cell_64k"));
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_1024K, id("block/drive/cells/essentia_cell_64k"));
-        LOGGER.info("Thaumic Energistics essentia storage + legacy bus bridge initialized");
+        PartModels.registerModels(
+                EssentiaTerminalPart.MODEL_OFF,
+                EssentiaTerminalPart.MODEL_ON,
+                ArcaneTerminalPart.MODEL_OFF,
+                ArcaneTerminalPart.MODEL_ON);
+        LOGGER.info("Thaumic Energistics essentia storage, legacy buses and terminal foundations initialized");
     }
 
     public static ResourceLocation id(String path) {

@@ -6,6 +6,8 @@ import appeng.parts.automation.ImportBusPart;
 import appeng.parts.automation.StorageLevelEmitterPart;
 import appeng.parts.storagebus.StorageBusPart;
 import com.neutronis.thaumicenergistics.ThaumicEnergistics;
+import com.neutronis.thaumicenergistics.integration.ae2.terminal.ArcaneTerminalPart;
+import com.neutronis.thaumicenergistics.integration.ae2.terminal.EssentiaTerminalPart;
 import com.neutronis.thaumicenergistics.item.EssentiaStorageCell;
 import com.neutronis.thaumicenergistics.item.LegacyNamedItem;
 import net.minecraft.core.registries.Registries;
@@ -75,6 +77,12 @@ public final class TEItems {
     public static final DeferredItem<PartItem<StorageLevelEmitterPart>> ESSENTIA_LEVEL_EMITTER = ITEMS.register(
             "essentia_level_emitter",
             () -> new PartItem<>(new Item.Properties(), StorageLevelEmitterPart.class, StorageLevelEmitterPart::new));
+    public static final DeferredItem<PartItem<EssentiaTerminalPart>> ESSENTIA_TERMINAL = ITEMS.register(
+            "essentia_terminal",
+            () -> new PartItem<>(new Item.Properties(), EssentiaTerminalPart.class, EssentiaTerminalPart::new));
+    public static final DeferredItem<PartItem<ArcaneTerminalPart>> ARCANE_TERMINAL = ITEMS.register(
+            "arcane_terminal",
+            () -> new PartItem<>(new Item.Properties(), ArcaneTerminalPart.class, ArcaneTerminalPart::new));
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATIVE_TAB = TABS.register(
             "main",

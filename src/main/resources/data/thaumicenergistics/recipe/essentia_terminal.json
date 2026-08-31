@@ -1,0 +1,12 @@
+{
+  "type": "thaumcraft:arcane_shapeless",
+  "research": "ESSENTIATERMINAL@2",
+  "vis": 25,
+  "ingredients": [
+    {"item": "ae2:terminal"},
+    {"item": "thaumicenergistics:diffusion_core"},
+    {"item": "thaumicenergistics:coalescence_core"},
+    {"item": "thaumcraft:salis_mundus"}
+  ],
+  "result": {"id": "thaumicenergistics:essentia_terminal", "count": 1}
+}
