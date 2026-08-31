@@ -6,9 +6,12 @@ import appeng.api.client.StorageCellModels;
 import appeng.api.parts.PartModels;
 import appeng.api.stacks.AEKeyType;
 import appeng.api.stacks.AEKeyTypes;
+import appeng.api.upgrades.Upgrades;
 import appeng.parts.automation.StackWorldBehaviors;
 import com.neutronis.thaumicenergistics.client.EssentiaKeyRenderer;
+import com.neutronis.thaumicenergistics.client.TEClient;
 import com.neutronis.thaumicenergistics.init.TEItems;
+import com.neutronis.thaumicenergistics.init.TEMenus;
 import com.neutronis.thaumicenergistics.integration.ae2.EssentiaKeyType;
 import com.neutronis.thaumicenergistics.integration.ae2.EssentiaKey;
 import com.neutronis.thaumicenergistics.integration.ae2.container.EssentiaContainerItemStrategy;
@@ -35,6 +38,7 @@ public final class ThaumicEnergistics {
 
     public ThaumicEnergistics(IEventBus bus) {
         TEItems.initialize(bus);
+        TEMenus.initialize(bus);
 
         bus.addListener((RegisterEvent event) -> {
             if (!event.getRegistryKey().equals(Registries.BLOCK)) {
@@ -61,10 +65,12 @@ public final class ThaumicEnergistics {
 
         if (FMLEnvironment.dist == Dist.CLIENT) {
             EssentiaKeyRenderer.initialize(bus);
+            TEClient.initialize(bus);
         }
     }
 
     private void commonSetup() {
+        Upgrades.add(TEItems.UPGRADE_ARCANE, TEItems.ARCANE_TERMINAL, 1);
         ContainerItemStrategy.register(
                 EssentiaKeyType.INSTANCE,
                 EssentiaKey.class,
@@ -74,9 +80,8 @@ public final class ThaumicEnergistics {
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_4K, id("block/drive/cells/essentia_cell_4k"));
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_16K, id("block/drive/cells/essentia_cell_16k"));
         StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_64K, id("block/drive/cells/essentia_cell_64k"));
-        // Higher tiers intentionally reuse the 64K drive-face artwork for now.
-        StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_256K, id("block/drive/cells/essentia_cell_64k"));
-        StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_1024K, id("block/drive/cells/essentia_cell_64k"));
+        StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_256K, id("block/drive/cells/essentia_cell_256k"));
+        StorageCellModels.registerModel(TEItems.ESSENTIA_CELL_1024K, id("block/drive/cells/essentia_cell_1024k"));
         PartModels.registerModels(
                 EssentiaTerminalPart.MODEL_OFF,
                 EssentiaTerminalPart.MODEL_ON,

@@ -1,5 +1,6 @@
 package com.neutronis.thaumicenergistics.init;
 
+import appeng.api.upgrades.Upgrades;
 import appeng.items.parts.PartItem;
 import appeng.parts.automation.StorageLevelEmitterPart;
 import appeng.parts.storagebus.StorageBusPart;
@@ -39,6 +40,9 @@ public final class TEItems {
     public static final DeferredItem<Item> ESSENTIA_COMPONENT_64K = ITEMS.registerSimpleItem("essentia_component_64k");
     public static final DeferredItem<Item> ESSENTIA_COMPONENT_256K = ITEMS.registerSimpleItem("essentia_component_256k");
     public static final DeferredItem<Item> ESSENTIA_COMPONENT_1024K = ITEMS.registerSimpleItem("essentia_component_1024k");
+    public static final DeferredItem<Item> UPGRADE_ARCANE = ITEMS.register(
+            "upgrade_arcane",
+            () -> Upgrades.createUpgradeCardItem(new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<EssentiaStorageCell> ESSENTIA_CELL_1K = ITEMS.register(
             "essentia_cell_1k",

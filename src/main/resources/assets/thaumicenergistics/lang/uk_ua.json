@@ -144,4 +144,7 @@
   "research.essentiastorage1024k.stage.2": "1024K-компонент став практичною верхньою межею цієї гілки технології: колосальний запас есенції в одному ME-носії без потреби будувати окремий зал банок.",
   "item.thaumicenergistics.essentia_terminal": "ME-термінал есенції",
   "item.thaumicenergistics.arcane_terminal": "Термінал магічного крафту"
+  ,"item.thaumicenergistics.upgrade_arcane": "Карта магічного заряджання"
+  ,"gui.thaumicenergistics.vis_available": "Доступно вісу: %s"
+  ,"gui.thaumicenergistics.charger_active": "Заряджання: чанки 3×3"
 }

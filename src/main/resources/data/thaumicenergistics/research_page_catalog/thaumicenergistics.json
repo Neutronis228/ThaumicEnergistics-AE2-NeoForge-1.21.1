@@ -16,6 +16,7 @@
     {"id": "thaumicenergistics:essentia_cell_1024k", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIASTORAGE1024K@2", "direct_reference": true, "occurrence_count": 1},
     {"id": "thaumicenergistics:essentia_terminal", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIATERMINAL@2", "direct_reference": true, "occurrence_count": 1},
     {"id": "thaumicenergistics:arcane_terminal", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ARCANETERMINAL@2", "direct_reference": true, "occurrence_count": 1},
+    {"id": "thaumicenergistics:upgrade_arcane", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ARCANETERMINAL@2&&WORKBENCHCHARGER", "direct_reference": true, "occurrence_count": 1},
     {"id": "thaumicenergistics:essentia_import_bus", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIABUSES@2", "direct_reference": true, "occurrence_count": 1},
     {"id": "thaumicenergistics:essentia_export_bus", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIABUSES@2", "direct_reference": true, "occurrence_count": 1},
     {"id": "thaumicenergistics:essentia_storage_bus", "legacy_source": "THAUMCRAFT_CATALOG", "kind": "ARCANE", "required_research": "ESSENTIABUSES@2", "direct_reference": true, "occurrence_count": 1},

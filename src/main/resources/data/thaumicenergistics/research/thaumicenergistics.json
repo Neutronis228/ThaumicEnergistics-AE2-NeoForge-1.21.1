@@ -133,6 +133,13 @@
       "stages": [
         {"text": "research.arcaneterminal.stage.1"},
         {"text": "research.arcaneterminal.stage.2", "recipes": ["thaumicenergistics:arcane_terminal"]}
+      ],
+      "addenda": [
+        {
+          "text": "research.arcaneterminal.addenda.1",
+          "recipes": ["thaumicenergistics:upgrade_arcane"],
+          "required_research": ["WORKBENCHCHARGER"]
+        }
       ]
     },
     {
